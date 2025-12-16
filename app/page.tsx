@@ -1,36 +1,33 @@
-import { Mail, Phone } from "lucide-react";
 'use client'
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { BarChart3, Globe, PhoneCall } from "lucide-react";
+import { BarChart3, Globe, PhoneCall, Mail, Phone } from "lucide-react";  // Added Mail and Phone imports
 
 export default function Home() {
-  <header className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-  <h1 className="text-2xl font-semibold tracking-wide">Business Booster</h1>
-  <div className="flex flex-col items-end text-sm text-slate-300 md:flex-row md:items-center md:gap-6">
-    <div className="flex items-center gap-2">
-      <Mail className="h-4 w-4 text-indigo-400" />
-      <a href="mailto:azbusinessbooster@gmail.com" className="hover:text-white">azbusinessbooster@gmail.com</a>
-    </div>
-    <div className="flex items-center gap-2">
-      <Phone className="h-4 w-4 text-indigo-400" />
-      <a href="tel:6022458245" className="hover:text-white">602-245-8245</a>
-    </div>
-    <nav className="hidden md:flex gap-8">
-      <a href="#services" className="hover:text-white">Services</a>
-      <a href="#process" className="hover:text-white">Process</a>
-      <a href="#about" className="hover:text-white">About</a>
-      <a href="#contact" className="hover:text-white">Contact</a>
-    </nav>
-  </div>
-</header>
-          <a href="#process" className="hover:text-white">Process</a>
-          <a href="#about" className="hover:text-white">About</a>
-          <a href="#contact" className="hover:text-white">Contact</a>
-        </nav>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100">
+      {/* Header with contact info */}
+      <header className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <h1 className="text-2xl font-semibold tracking-wide">Business Booster</h1>
+        <div className="flex flex-col items-end text-sm text-slate-300 md:flex-row md:items-center md:gap-6">
+          <div className="flex items-center gap-2">
+            <Mail className="h-4 w-4 text-indigo-400" />
+            <a href="mailto:azbusinessbooster@gmail.com" className="hover:text-white">azbusinessbooster@gmail.com</a>
+          </div>
+          <div className="flex items-center gap-2">
+            <Phone className="h-4 w-4 text-indigo-400" />
+            <a href="tel:6022458245" className="hover:text-white">602-245-8245</a>
+          </div>
+          <nav className="hidden md:flex gap-8">
+            <a href="#services" className="hover:text-white">Services</a>
+            <a href="#process" className="hover:text-white">Process</a>
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </nav>
+        </div>
       </header>
-
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
         <motion.div
@@ -68,7 +65,6 @@ export default function Home() {
           </p>
         </motion.div>
       </section>
-
       {/* Services */}
       <section id="services" className="max-w-7xl mx-auto px-6 py-24">
         <h3 className="text-3xl font-semibold mb-12">Our Services</h3>
@@ -105,7 +101,6 @@ export default function Home() {
           </Card>
         </div>
       </section>
-
       {/* Process */}
       <section id="process" className="bg-slate-900/50 py-24">
         <div className="max-w-7xl mx-auto px-6">
@@ -147,7 +142,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* About */}
       <section id="about" className="max-w-7xl mx-auto px-6 py-24">
         <h3 className="text-3xl font-semibold mb-6">Why Business Booster</h3>
@@ -157,7 +151,6 @@ export default function Home() {
           Business Booster becomes your long-term growth partner.
         </p>
       </section>
-
       {/* Contact */}
       <section id="contact" className="bg-slate-900/70 py-24">
         <div className="max-w-3xl mx-auto px-6 text-center">
@@ -179,10 +172,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-10 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} BusinessBooster.com · All Rights Reserved
+        © 2025 BusinessBooster.com · All Rights Reserved
       </footer>
     </div>
   );
