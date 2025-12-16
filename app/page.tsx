@@ -1,3 +1,4 @@
+import { Mail, Phone } from "lucide-react";
 <header className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
   <h1 className="text-2xl font-semibold tracking-wide">Business Booster</h1>
   <div className="flex flex-col items-end text-sm text-slate-300 md:flex-row md:items-center md:gap-6">
